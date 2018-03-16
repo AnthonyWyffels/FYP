@@ -1,0 +1,10 @@
+Database categories
+
+key=Health
+1= illness x
+2= emergencies x
+3= location of medical centre x
+4= appointments x
+5= regestration of students at mc x
+6= opening hours x
+0= ?? Councelling??
