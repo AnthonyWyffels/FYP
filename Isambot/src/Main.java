@@ -78,7 +78,7 @@ public class Main {
 		System.out.println("This is the key: " + key);
 		if (key == "health") {HealthClass.Main();}
 		if (key=="studies") {/*StudieClass.Main()*/}
-		if (key=="finance") {/*FinanceClass.Main()*/}
+		if (key=="finance") {FinanceClass.Main();}
 	}//end of option selection
 	
 		

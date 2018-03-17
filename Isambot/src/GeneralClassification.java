@@ -4,6 +4,8 @@ import java.util.Random;
 public class GeneralClassification {
 	
 	public static void MainGeneralChat(String userinput) {
+		
+
 
 		
 		//this could all be put in a database at in a future stage. For the moment it is ok here though						
@@ -55,10 +57,21 @@ public class GeneralClassification {
 			}	
 		}//end of while
 		//let the bot print the default response
-		if (response == 2) 
+		if (response == 2 && userinput.contains("change key")==false) 
 		{
 			Main.botSay(general[general.length -1][0]);
 		}
+		
+		if (userinput.contains("change key")) {
+			Main.ChooseOption();
+			Main.OptionSelected();
+		}
+		
+		
+		
+		
+		
+		
 	}//end of MainGeneralChat
 	
 	
