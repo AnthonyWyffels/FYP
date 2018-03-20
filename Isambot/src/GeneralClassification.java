@@ -5,9 +5,11 @@ public class GeneralClassification {
 	
 	public static void MainGeneralChat(String userinput) {
 		
-
-
-		
+	if (userinput.contains("change key")) { //changing key
+			Main.ChooseOption();
+			Main.OptionSelected();
+	}
+	else {
 		//this could all be put in a database at in a future stage. For the moment it is ok here though						
 		String[][] general = 
 			{
@@ -62,10 +64,8 @@ public class GeneralClassification {
 			Main.botSay(general[general.length -1][0]);
 		}
 		
-		if (userinput.contains("change key")) {
-			Main.ChooseOption();
-			Main.OptionSelected();
-		}
+	}//end of big else
+
 		
 		
 		
