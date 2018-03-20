@@ -59,7 +59,7 @@ public class GeneralClassification {
 			}	
 		}//end of while
 		//let the bot print the default response
-		if (response == 2 && userinput.contains("change key")==false) 
+		if (response == 2) 
 		{
 			Main.botSay(general[general.length -1][0]);
 		}
