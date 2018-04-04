@@ -15,8 +15,8 @@ public class HealthClass {
 		
 		Main.txtEnter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Main.trimming();//triming method
 				String uText = Main.txtEnter.getText();
+				Main.trimming();//triming method
 				//System.out.println("This is txtEnter trimmed : "+uText);
 				Main.txtChat.append(Main.name + ": "+ uText + "\n");
 				
@@ -47,7 +47,6 @@ public class HealthClass {
 							Main.botSay(output);
 						}
 					}
-
 					else 
 					{
 						GeneralClassification.MainGeneralChat(uText);
