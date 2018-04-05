@@ -16,6 +16,7 @@ public class Main {
 	public static JTextField txtEnter = new JTextField();
 	public static JTextArea txtChat = new JTextArea();
 	static Thread thread = new Thread();
+	public final static String bot = "Isambot: ";
 	
 	public static void main(String[] args) throws IOException{
 		NameBox();
@@ -70,7 +71,7 @@ public class Main {
 		txtChat.setEnabled(false);
 		txtChat.setLineWrap(true);
 		txtChat.setWrapStyleWord(true);
-		txtChat.append("Hi there, how may I help you? " + "\n");
+		txtChat.append(bot +"Hi there, how may I help you? " + "\n");
 		frame.add(txtChat);
 	}//end of ChatboxFrame()
 		
@@ -83,7 +84,7 @@ public class Main {
 	
 		
 	public static void botSay(String s) {
-		txtChat.append("Isambot: "+ s + "\n");
+		txtChat.append(bot + s + "\n");
 	}//end of botSay
 	
 	
